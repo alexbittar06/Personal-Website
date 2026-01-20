@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Home">
+  <div class="space-y-16">
+    <!-- Hero Section -->
+    <section class="space-y-6 py-12 text-center">
+      <h1 class="text-5xl font-bold tracking-tight sm:text-6xl">
+        Hi, I'm <span class="text-[#C99700]">Alex Bittar</span>
+      </h1>
+      <p class="mx-auto max-w-2xl text-xl text-zinc-400">
+        I'm a senior at the University of Notre Dame double-majoring in Computer Science and Political Science. I'm interested in how technology, policy, and human behavior intersect, and how thoughtful software can be used to solve real-world problems.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="/about"
+          class="rounded-lg bg-[#C99700] px-6 py-3 font-medium text-[#0C2340] transition hover:bg-[#E5B84D]"
+        >
+          Learn More About Me
+        </a>
+        <a
+          href="/projects"
+          class="rounded-lg border border-[#C99700]/30 bg-[#0C2340]/50 px-6 py-3 font-medium text-[#C99700] transition hover:border-[#C99700]/50 hover:bg-[#0C2340]/70"
+        >
+          View My Projects
+        </a>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="space-y-4">
+      <h2 class="text-3xl font-bold">About</h2>
+      <div class="prose prose-invert max-w-none text-zinc-300">
+        <p>
+          My academic and project experience spans algorithm design, SAT solvers, and applied software development, with hands-on experience building full projects from idea to implementation. Beyond software development, I've written research papers on politics in Latin America, exploring the intersection of policy, governance, and social dynamics in the region. I enjoy writing and find that it complements my technical work, helping me communicate complex ideas clearly.
+        </p>
+        <p>
+          I've also worked extensively with data analysis, using various tools and techniques to extract insights, identify patterns, and inform decision-making. Whether it's building web applications, exploring new frameworks, solving complex algorithmic problems, or analyzing data, I'm always eager to dive in and learn.
+        </p>
+        <p>
+          <a href="/about" class="text-[#C99700] hover:text-[#E5B84D]">
+            Read more about me →
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="space-y-4">
+      <h2 class="text-3xl font-bold">Featured Projects</h2>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="rounded-lg border border-[#C99700]/20 bg-[#0C2340]/50 p-6 transition hover:border-[#C99700]/40">
+          <h3 class="mb-2 text-xl font-semibold">Wise Wizards Fitness</h3>
+          <p class="mb-4 text-zinc-400">
+            A fitness tracking app that helps users track and understand their fitness goals such as calorie counting and exercise tracking. Built with React, JavaScript, CSS, and HTML in collaboration with Evan Bartek.
+          </p>
+          <a href="/projects" class="text-[#C99700] hover:text-[#E5B84D] text-sm font-medium">
+            View Project →
+          </a>
+        </div>
+        <div class="rounded-lg border border-[#C99700]/20 bg-[#0C2340]/50 p-6 transition hover:border-[#C99700]/40">
+          <h3 class="mb-2 text-xl font-semibold">Campus Safety App Redesign</h3>
+          <p class="mb-4 text-zinc-400">
+            A collaborative project reimagining the University of Notre Dame's campus safety app to make it more user-friendly, reliable, and easy to access. Designed using Figma.
+          </p>
+          <a href="/projects" class="text-[#C99700] hover:text-[#E5B84D] text-sm font-medium">
+            View Project →
+          </a>
+        </div>
+      </div>
+      <p class="pt-4">
+        <a href="/projects" class="text-[#C99700] hover:text-[#E5B84D]">
+          See all projects →
+        </a>
+      </p>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="rounded-lg border border-[#C99700]/20 bg-[#0C2340]/50 p-8 text-center">
+      <h2 class="mb-4 text-3xl font-bold">Let's Connect</h2>
+      <p class="mb-6 text-zinc-400">
+        Have a project in mind or want to collaborate? I'd love to hear from you!
+      </p>
+      <a
+        href="/contact"
+        class="inline-block rounded-lg bg-[#C99700] px-6 py-3 font-medium text-[#0C2340] transition hover:bg-[#E5B84D]"
+      >
+        Get In Touch
+      </a>
+    </section>
+  </div>
+</Layout>
