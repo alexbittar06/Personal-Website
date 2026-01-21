@@ -1,0 +1,20 @@
+---
+import { site } from "../config/site";
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-[#C99700]/20">
+  <div class="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <p class="text-sm text-zinc-400">
+        © {year} {site.name}. Built with Astro.
+      </p>
+      <div class="flex flex-wrap items-center gap-4 text-sm">
+        <a class="text-zinc-300 hover:text-[#C99700]" href={"mailto:" + site.social.email}>Email</a>
+        <a class="text-zinc-300 hover:text-[#C99700]" href={site.social.github}>GitHub</a>
+        <a class="text-zinc-300 hover:text-[#C99700]" href={site.social.linkedin}>LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+

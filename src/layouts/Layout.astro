@@ -1,0 +1,42 @@
+---
+import "../styles/global.css";
+import { site } from "../config/site";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const { title, description } = Astro.props;
+const pageTitle = title ? `${title} — ${site.name}` : site.title;
+const pageDescription = description ?? site.description;
+---
+
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="color-scheme" content="dark light" />
+  </head>
+  <body class="min-h-full bg-[#0C2340] text-zinc-100 antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:rounded-md focus:bg-[#C99700] focus:px-3 focus:py-2 focus:text-[#0C2340]"
+    >
+      Skip to content
+    </a>
+    <Nav />
+    <main id="main" class="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+

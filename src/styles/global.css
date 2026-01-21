@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-notre-dame-navy: #0C2340;
+  --color-notre-dame-gold: #C99700;
+  --color-notre-dame-gold-light: #E5B84D;
+  --color-notre-dame-gold-dark: #B08500;
+  --color-notre-dame-navy-light: #1A3A5A;
+  --color-notre-dame-navy-dark: #081828;
+}
