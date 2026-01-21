@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Home">
@@ -14,13 +15,13 @@ import Layout from "../layouts/Layout.astro";
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a
-          href="/about"
+          href={`${base}about`}
           class="rounded-lg bg-[#C99700] px-6 py-3 font-medium text-[#0C2340] transition hover:bg-[#E5B84D]"
         >
           Learn More About Me
         </a>
         <a
-          href="/projects"
+          href={`${base}projects`}
           class="rounded-lg border border-[#C99700]/30 bg-[#0C2340]/50 px-6 py-3 font-medium text-[#C99700] transition hover:border-[#C99700]/50 hover:bg-[#0C2340]/70"
         >
           View My Projects
@@ -39,7 +40,7 @@ import Layout from "../layouts/Layout.astro";
           I've also worked extensively with data analysis, using various tools and techniques to extract insights, identify patterns, and inform decision-making. Whether it's building web applications, exploring new frameworks, solving complex algorithmic problems, or analyzing data, I'm always eager to dive in and learn.
         </p>
         <p>
-          <a href="/about" class="text-[#C99700] hover:text-[#E5B84D]">
+          <a href={`${base}about`} class="text-[#C99700] hover:text-[#E5B84D]">
             Read more about me →
           </a>
         </p>
@@ -55,7 +56,7 @@ import Layout from "../layouts/Layout.astro";
           <p class="mb-4 text-zinc-400">
             A fitness tracking app that helps users track and understand their fitness goals such as calorie counting and exercise tracking. Built with React, JavaScript, CSS, and HTML in collaboration with Evan Bartek.
           </p>
-          <a href="/projects" class="text-[#C99700] hover:text-[#E5B84D] text-sm font-medium">
+          <a href={`${base}projects`} class="text-[#C99700] hover:text-[#E5B84D] text-sm font-medium">
             View Project →
           </a>
         </div>
@@ -64,13 +65,13 @@ import Layout from "../layouts/Layout.astro";
           <p class="mb-4 text-zinc-400">
             A collaborative project reimagining the University of Notre Dame's campus safety app to make it more user-friendly, reliable, and easy to access. Designed using Figma.
           </p>
-          <a href="/projects" class="text-[#C99700] hover:text-[#E5B84D] text-sm font-medium">
+          <a href={`${base}projects`} class="text-[#C99700] hover:text-[#E5B84D] text-sm font-medium">
             View Project →
           </a>
         </div>
       </div>
       <p class="pt-4">
-        <a href="/projects" class="text-[#C99700] hover:text-[#E5B84D]">
+        <a href={`${base}projects`} class="text-[#C99700] hover:text-[#E5B84D]">
           See all projects →
         </a>
       </p>
@@ -83,7 +84,7 @@ import Layout from "../layouts/Layout.astro";
         Have a project in mind or want to collaborate? I'd love to hear from you!
       </p>
       <a
-        href="/contact"
+        href={`${base}contact`}
         class="inline-block rounded-lg bg-[#C99700] px-6 py-3 font-medium text-[#0C2340] transition hover:bg-[#E5B84D]"
       >
         Get In Touch

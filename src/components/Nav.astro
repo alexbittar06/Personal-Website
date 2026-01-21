@@ -1,20 +1,23 @@
 ---
 import { site } from "../config/site";
 const pathname = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
 ---
 
 <header class="border-b border-[#C99700]/20 bg-[#0C2340]/90 backdrop-blur">
   <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
-    <a href="/" class="font-semibold tracking-tight text-[#C99700]">
+    <a href={`${base}`} class="font-semibold tracking-tight text-[#C99700]">
       {site.name}
     </a>
     <nav aria-label="Primary" class="flex items-center gap-1">
       {
         site.nav.map((item) => {
-          const active = pathname === item.href;
+          const href = item.href === '/' ? base : `${base}${item.href.slice(1)}`;
+          const normalizedPathname = pathname.endsWith('/') && pathname !== base ? pathname.slice(0, -1) : pathname;
+          const active = normalizedPathname === item.href || normalizedPathname === href || (item.href === '/' && normalizedPathname === base);
           return (
             <a
-              href={item.href}
+              href={href}
               aria-current={active ? "page" : undefined}
               class:list={[
                 "rounded-md px-3 py-2 text-sm font-medium transition",
