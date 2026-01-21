@@ -3,7 +3,7 @@ export const site = {
   title: "Alex Bittar — Personal Website",
   description:
     "Personal website of Alex Bittar, a senior at Notre Dame studying Computer Science and Political Science, with projects, research, and ways to get in touch.",
-  url: "https://example.com",
+  url: "https://alexbittar06.github.io/Personal-Website",
   nav: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -12,6 +12,7 @@ export const site = {
   ],
   social: {
     email: "abittar@nd.edu",
+    emailAlt: "alexanderbittar@hotmail.com",
     github: "https://github.com/alexbittar06",
     linkedin: "https://www.linkedin.com/in/alexander-bittar-641123259/",
   },
