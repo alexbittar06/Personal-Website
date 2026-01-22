@@ -65,12 +65,20 @@ const baseWithSlash = base.endsWith('/') ? base : `${base}/`;
       </p>
     </section>
 
-    <div class="pt-8">
+    <div class="pt-8 flex flex-wrap gap-4">
       <a
         href={`${baseWithSlash}contact`}
         class="inline-block rounded-lg bg-[#C99700] px-6 py-3 font-medium text-[#0C2340] transition hover:bg-[#E5B84D]"
       >
         Get In Touch
+      </a>
+      <a
+        href={`${baseWithSlash}resume/Alexander_Bittar_Resume_1.pdf`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block rounded-lg border border-[#C99700]/30 bg-[#0C2340]/50 px-6 py-3 font-medium text-[#C99700] transition hover:border-[#C99700]/50 hover:bg-[#0C2340]/70"
+      >
+        Download Resume
       </a>
     </div>
   </article>

@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
+const baseWithSlash = base.endsWith('/') ? base : `${base}/`;
+---
+
+<Layout title="Research & Writings" description="Academic research papers and writings by Alex Bittar on politics, democracy, and governance in Latin America and Asia.">
+  <div class="space-y-8">
+    <div class="space-y-4">
+      <h1 class="text-4xl font-bold">Research & Writings</h1>
+      <p class="text-xl text-zinc-300">
+        A collection of my academic research papers exploring politics, democracy, governance, and social dynamics in Latin America and Asia.
+      </p>
+    </div>
+
+    <div class="space-y-6">
+      <!-- Research Paper 1 -->
+      <div class="rounded-lg border border-[#C99700]/20 bg-[#0C2340]/50 p-6 transition hover:border-[#C99700]/40">
+        <h2 class="mb-2 text-2xl font-semibold">Democracy Erosion in Venezuela</h2>
+        <p class="mb-4 text-zinc-400">
+          An analysis of the erosion of democratic institutions and processes in Venezuela, examining the factors that have contributed to the decline of democratic governance in the country.
+        </p>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Latin America
+          </span>
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Political Science
+          </span>
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Democracy
+          </span>
+        </div>
+        <a
+          href={`${baseWithSlash}research/Democrarcy_Errosion_In_Venezuela.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block text-[#C99700] hover:text-[#E5B84D] text-sm font-medium"
+        >
+          Read Paper →
+        </a>
+      </div>
+
+      <!-- Research Paper 2 -->
+      <div class="rounded-lg border border-[#C99700]/20 bg-[#0C2340]/50 p-6 transition hover:border-[#C99700]/40">
+        <h2 class="mb-2 text-2xl font-semibold">Mexico and the PRI Party</h2>
+        <p class="mb-4 text-zinc-400">
+          A study of Mexico's Institutional Revolutionary Party (PRI) and its role in Mexican politics, examining the party's historical dominance and its impact on the country's political landscape.
+        </p>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Latin America
+          </span>
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Political Science
+          </span>
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Mexico
+          </span>
+        </div>
+        <a
+          href={`${baseWithSlash}research/Mexico_PRI.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block text-[#C99700] hover:text-[#E5B84D] text-sm font-medium"
+        >
+          Read Paper →
+        </a>
+      </div>
+
+      <!-- Research Paper 3 -->
+      <div class="rounded-lg border border-[#C99700]/20 bg-[#0C2340]/50 p-6 transition hover:border-[#C99700]/40">
+        <h2 class="mb-2 text-2xl font-semibold">Global Asia Final Paper</h2>
+        <p class="mb-4 text-zinc-400">
+          A comprehensive analysis of political, economic, and social dynamics in Asia, exploring regional trends and their global implications.
+        </p>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Asia
+          </span>
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Political Science
+          </span>
+          <span class="rounded-full bg-[#C99700]/20 px-3 py-1 text-xs font-medium text-[#C99700]">
+            Global Studies
+          </span>
+        </div>
+        <a
+          href={`${baseWithSlash}research/Global_Asia_Final_Paper.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block text-[#C99700] hover:text-[#E5B84D] text-sm font-medium"
+        >
+          Read Paper →
+        </a>
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-[#C99700]/20 bg-[#0C2340]/50 p-6">
+      <h2 class="mb-4 text-xl font-semibold">About My Research</h2>
+      <p class="text-zinc-300">
+        My research interests lie at the intersection of technology, policy, and human behavior. Through my work in political science, I explore how governance structures, democratic institutions, and political parties shape societies, with a particular focus on Latin America and Asia. These papers reflect my commitment to understanding complex political systems and their implications for society.
+      </p>
+    </div>
+  </div>
+</Layout>
