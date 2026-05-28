@@ -12,8 +12,8 @@ export const site = {
     { label: "Contact", href: "/contact" },
   ],
   social: {
-    email: "abittar@nd.edu",
-    emailAlt: "alexanderbittar@hotmail.com",
+    email: "alexanderbittar@hotmail.com",
+    emailAlt: "abittar@alumni.nd.edu",
     github: "https://github.com/alexbittar06",
     linkedin: "https://www.linkedin.com/in/alexander-bittar-641123259/",
   },
